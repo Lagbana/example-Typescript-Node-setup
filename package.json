@@ -5,7 +5,8 @@
   "main": "dist/server.js",
   "scripts": {
     "start": "tsc && node dist/server.js",
-    "test": "jest --runInBand --detectOpenHandles --forceExit"
+    "test": "jest --runInBand --detectOpenHandles --forceExit",
+    "lint": "tslint -c ./tslint.json -t stylish 'src/**/*.ts' --fix"
   },
   "keywords": ["Typescript", "express", "jest", "supertest"],
   "author": "Larry Agbana",
